@@ -25,8 +25,8 @@ library(RColorBrewer)
 # Loading data - not .csv.
 # .RData file easier for larger datasets.
 
-load("LPIdata_Feb2016.RData")
-load("puffin_GBIF.RData")
+load("working-efficiently-with-large-datasets/LPIdata_Feb2016.RData")
+load("working-efficiently-with-large-datasets/puffin_GBIF.RData")
 
 # 1. Formatting and tidying data usinf tidyr.
 # Checking if data is tidy.
