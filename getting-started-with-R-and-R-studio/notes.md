@@ -27,3 +27,40 @@ getwd()
 setwd("C:/User/CC-1-RBasics-master")
 # This is an example filepath, alter to your own filepath
 ```
+
+## 2. Import and Check Data
+#### Importing
+When importing data, make sure working directory is correct first. ```Edidiv``` is the name given to the imported data. It is then stored as an object.
+
+```
+object_name <- read.csv(data)
+```
+Here is an example...
+```
+edidiv <- read.csv("C:/Users/user/Desktop/Intro_to_R/edidiv.csv")  # This is the file path based on where I saved the data, your filepath will be different
+```
+#### Checking Data
+Once data is importaint it's a good idea to make some check to understand the data's internal structure.
+```
+head(edidiv)                # Displays the first few rows
+tail(edidiv)                # Displays the last rows
+str(edidiv)                 # Tells you whether the variables are continuous, integers, categorical or characters
+```
+
+#### Accessing Columns and Changing Variable Type
+If you want to check data for one column only, R allows the use of $ to segregate. To use; $ then following column name.
+```
+head(edidiv$taxonGroup)     # Displays the first few rows of this column only
+class(edidiv$taxonGroup)    # Tells you what type of variable we're dealing with: it's character now but we want it to be a factor
+```
+To change variable type within a column, use code below.
+```
+edidiv$taxonGroup <- as.factor(edidiv$taxonGroup)
+```
+Other data exploration tools include...
+```
+# More exploration
+dim(edidiv)                 # Displays number of rows and columns
+summary(edidiv)             # Gives you a summary of the data
+summary(edidiv$taxonGroup)  # Gives you a summary of that particular variable (column) in your dataset
+```
