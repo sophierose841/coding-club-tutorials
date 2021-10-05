@@ -5,5 +5,5 @@
 
 ## Contents
 #### R Basics
-* [Getting Started with R and R Studio](
+* [Getting Started with R and R Studio](https://github.com/sophierose841/coding-club-tutorials/tree/main/getting-started-with-R-and-R-studio)
 * 
